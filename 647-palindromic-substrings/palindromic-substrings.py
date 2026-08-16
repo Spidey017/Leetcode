@@ -12,8 +12,8 @@ class Solution:
                     sub.append(x)
 
         for i in sub:
-            if i==i[::-1]:
-                count=count+1
+            
+            count=count+1
 
         return count
         
