@@ -14,7 +14,8 @@ class Solution:
             end=max(end,h[s[i]])
 
             if i==end:
-                ans.append(end-start+1)
+                sub=s[start:end+1]
+                ans.append(len(sub))
                 start=i+1
 
         return ans
