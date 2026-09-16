@@ -3,21 +3,26 @@ class Solution:
 
         i=0
         s=0
-        large=float('-inf')
+
+        ans=float(-inf)
 
         for j in range(len(nums)):
+
             s=s+nums[j]
 
             if j-i+1==k:
                 avg=s/k
 
-                if avg>large:
-                    large=avg
-
+                if avg>ans:
+                    ans=avg
                 s=s-nums[i]
+
                 i=i+1
 
-        return large
+        return ans
+
+
+        
 
                     
 
