@@ -3,15 +3,11 @@ class Solution:
 
         if len(s)!=len(t):
             return False
-    
+
         count={}
 
         for i in s:
-            if i in count:
-                count[i]+=1
-
-            else:
-                count[i]=1
+            count[i]=count.get(i,0)+1
 
         for i in t:
             if i not in count:
